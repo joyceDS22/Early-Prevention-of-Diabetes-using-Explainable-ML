@@ -8,7 +8,7 @@ Keywords: Explainable AI in diabetes, Early Prediction in diabetes, AI in health
 
 
 
-
+---
 
 ### I.	Introduction ###
 Modern society faces a significant burden from life-threatening diseases that can often be effectively controlled if diagnosed early. According to IDF[1], by 2045, approximately 783 million adults globally, will be living with diabetes. 
@@ -23,6 +23,7 @@ In this study, we have constructed three predictive ML techniques, including RF,
 
 The rest of the paper is structured as follows. In the following, (A) a literature review of the XAI and ML techniques applied in the healthcare sector, (II) describes the Experimental design of our projects, (III) the experimental results of our XAI analysis, and lastly, (IV) addresses the conclusion, limitations and future work of this study.
 
+---
  
 A.	Small-Scale Literature Review
 This section highlights the practical potential of XAI and ML in improving decision-making processes within the healthcare sector.
