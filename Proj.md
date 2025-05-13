@@ -38,7 +38,7 @@ Integrated gradients are especially helpful for comprehending complex neural net
 For time-series data, various XAI techniques like temporal saliency maps and attention mechanisms provide both global and local insights. Despite their benefits, time-series data interpretation can be challenging, particularly for novices, and many methods have limited generalizability due to their model-specificity [8]. These methods are designed to handle the complexities of temporal dependencies, making them useful in fields like healthcare and finance. However, interpreting time-series models can be challenging, especially for novices, and many of these techniques are model-specific, limiting their generalizability.
 Comparing these techniques, SHAP and time-series methods provide both global and local explainability, while counterfactual explanations and Integrated Gradients focus more on local insights. SHAP is model-agnostic, whereas Integrated Gradients and some time-series techniques are model-specific. While counterfactuals and SHAP both offer actionable insights, the former is more intuitive and user-friendly, making it accessible to non-experts. However, both counterfactuals and time-series methods require significant computational resources, especially for complex models. In essence, each method has its strengths and is suited to different contexts, balancing explainability, actionability, and computational feasibility depending on the application.
 
- 
+---
 #### II.	Experimental Design
 Our study utilizes the UCI dataset “Early prediction of diabetes”. It includes 520 samples with 16 features to predict early-stage diabetes. Our response variable, ‘Class’, is a binary variable that takes a value of 1 (Diabetes) and 0 (No Diabetes). 
 Figure 1 illustrates the proposed pipeline, which includes data pre-processing, feature selection, and model interpretability. The process begins with data pre-processing, followed by EDA and a Chi-square test. Feature importance is assessed using RF, and feature selection is performed with PCA.
@@ -78,9 +78,10 @@ b)	PCA Feature Selection
 To further understand the significant patterns in the data, we employed PCA. Figure 7 presents a scree plot showing the proportion of variance explained by each principal component. Using the elbow method, we determined that two principal components should be retained.
 Figure 8 displays the biplot of the first (PC1), which accounts for 24.4% of the variance, and (PC2), which explains 38.3% of the variance, a total of (62.7%). Features with high loading on PC1 include itching, age, delayed healing, muscle stiffness, visual blurring, and polyphagia, while high loadings on PC2 include gender, alopecia, and genital thrush.
 In the following section, we will build our predictive models. To avoid introducing bias and to prevent potential underfitting, we decided not to exclude any features.
-   
-   
-B.	Predictive Model Construction
+
+---
+
+## B.	Predictive Model Construction
 In our study, to predict diabetes, the following three ML techniques are utilized. A brief introduction of the ML algorithm for model selection is given below:
 1.	Random Forest
 (RF) is a fast and efficient ensemble learning method that accommodates both categorical and continuous features, including those with missing values. It offers insights into feature importance and benefits from its ensemble approach, which reduces sensitivity to variations in the training data.
@@ -94,8 +95,8 @@ Cons: Assumes linear relationships between target and predictor variables and st
 (SVM) are effective for both linear and non-linear classification and regression tasks. They identify an optimal hyperplane in a high-dimensional space to separate data points from different classes. The objective is to maximize the margin between classes, which enhances classification performance, even for complex, non-linear problems. 
 Pros: Robust against outliers and, with the use of kernel tricks, can address complex issues.
 Cons: Selecting an appropriate kernel and fine-tuning hyperparameters, such as cost (C) and gamma, can be challenging.
-
-C.	Performance Evaluation
+---
+## C.	Performance Evaluation
 Table 1 and Figure 9 show that all three models achieved high AUC scores for predicting positive TPR and FPR. RF model had the highest AUC score of 0.99, F1 score (0.95), sensitivity score of 0.95 for identifying diabetes, and high specificity score (0.90) in identifying non-diabetes.
 LR demonstrated relatively well in achieving high AUC score of 0.97, F1 score (0.92), sensitivity (0.92), however, it has the lowest specificity score (0.88) in identifying non-diabetes.
 SVM achieved an AUC score of (0.98), a sensitivity score of 0.92, an F1 score of 0.95, and a superior specificity score (0.98) for predicting non-diabetes.
