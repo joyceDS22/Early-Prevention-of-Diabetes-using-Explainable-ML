@@ -21,8 +21,6 @@ In this study, we have constructed three predictive ML techniques, including RF,
 2.	Which ML model – has the highest ROC-AUC scores for predicting diabetes?
 3.	Can XAI be utilized to assist endocrinologists in predicting diabetes outcomes more effectively?
 ---
----
-
 ## Conclusion
 Polyuria and Polydipsia are well-known early signs of diabetes. In this study, we applied the SMOTE technique to three different machine-learning algorithms to identify these early indicators. Unlike previous research, we also integrated interpretable machine learning methods, specifically SHAP and LIME, to explain how our models arrived at predictions and to determine the relationships between target variables and predictors. Our findings revealed that the Random Forest (RF) model performed best, achieving an impressive F1 score of 95% and an AUC score of 0.99. These insights can aid endocrinologists in identifying individuals at risk of developing diabetes based on early symptoms, offering a preventive approach in diabetes management.
  
