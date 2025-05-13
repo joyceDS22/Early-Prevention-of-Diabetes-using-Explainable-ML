@@ -1,6 +1,6 @@
-Early Prevention of Diabetes Using Explainable Machine Learning
+** Early Prevention of Diabetes Using Explainable Machine Learning** 
 
-Abstract
+## Abstract
 Diabetes, a prominent lifestyle disease, presents a significant challenge to global public health, with a rising number of individuals affected worldwide. The integration of machine learning models into healthcare offers a promising avenue for improving early detection and intervention strategies. This study investigates the effectiveness of three machine learning models Random Forest (RF), Logistic Regression (LR), and Support Vector Machine (SVM) in predicting diabetes using a dataset of 520 samples with 16 features. The primary focus is on enhancing model interpretability through post-hoc explainability techniques such as SHAP (Shapley Additive Explanations) and LIME (Local Interpretable Model-agnostic Explanations), which provide valuable insights into the factors driving model predictions.
 To address class imbalance, the dataset undergoes preprocessing using the Synthetic Minority Over-sampling Technique (SMOTE), ensuring a balanced distribution of classes. The models are evaluated based on metrics such as AUC, F1 score, sensitivity, and specificity. The Random Forest model emerges as the most effective, achieving an AUC score of 0.99 and an F1 score of 0.95. Notably, the analysis identifies polyuria, polydipsia, age, and gender as significant predictors of early diabetes, highlighting the model's ability to discern critical risk factors.
 The utilization of explainable AI techniques enhances the transparency and trustworthiness of machine learning models in healthcare. SHAP values offer both global and local explanations of model predictions, underscoring the importance of symptoms like polyuria and polydipsia in diagnosing diabetes. LIME provides localized explanations that further aid clinical decision-making by illustrating individual prediction factors. Despite the computational demands of these techniques, the study demonstrates their potential to support endocrinologists in identifying at-risk individuals and implementing preventive measures, ultimately contributing to more effective diabetes management.
@@ -138,35 +138,7 @@ Throughout the project, an extensive analysis of explainable AI (XAI) techniques
  
 Overall, this project highlights the crucial role of explainable AI in making machine learning models transparent, trustworthy, and actionable. By systematically evaluating LIME and SHAP, we have created a clear framework for selecting appropriate XAI techniques based on the needs of specific applications. As machine learning continues to influence high-stakes decision-making environments, explainability becomes increasingly vital. This project emphasizes the need for ongoing research and development to ensure that AI systems not only deliver powerful performance but also offer understandable and justifiable outcomes.
  
-V.	References
-[1]	I. D. Federation. "Diabetes Facts and Figures " https://idf.org/about-diabetes/diabetes-facts-figures/ (accessed May 07, 2024).
-[2]	H. Habehh and S. Gohel, "Machine Learning in Healthcare," (in eng), Curr Genomics, vol. 22, no. 4, pp. 3]	J. Singh, S. Rani, and G. Srilakshmi, "Towards Explainable AI: Interpretable Models for Complex Decision-making," in 2024 International Conference on Knowledge Engineering and Communication Systems (ICKECS), 18-19 April 2024, vol. 1, pp.  
-[4]	M. S. Islam, M. M. Alam, A. Ahamed, and S. I. A. Meerza, "Prediction of Diabetes at Early Stage using Interpretable Machine Learning," in SoutheastCon 2023, 1-16 April 2023, pp.  
-[5]	C. K. Leung, E. W. R. Madill, J. Souza, and C. Y. Zhang, "Towards Trustworthy Artificial Intelligence in Healthcare," in 2022 IEEE 10th International Conference on Healthcare Informatics (ICHI), 11-14 June 2022, pp.  
-[6]	Y. Wang and Z. Luo, "Causal Discovery and Causal Inference Based Counterfactual Fairness in Machine Learning," in ICASSP 2023 - 2023 IEEE International Conference on Acoustics, Speech and Signal Processing (ICASSP), 4-10 June 2023, pp.  
-[7]	D. Gaspar, P. Silva, and C. Silva, “Explainable AI for intrusion Detection Systems: 	LIME and SHAP applicability on Multi-Layer Perceptron,” IEEE Access, vol. 12, pp. 	30164–30175, Jan. 
-[8]	Y. Mei, Q. Chen, A. Lensen, B. Xue, and M. Zhang, "Explainable Artificial Intelligence by Genetic Programming: A Survey," in IEEE Transactions on Evolutionary Computation, June 2023, vol. 27, no. 3, pp.  
- 
-VI.	Appendix
-A.	Imbalanced Distribution of Target variable
- 
-Figure 2: Distribution of Target Variable
 
-B.	Gender Distribution 
- 
-Figure 3: Gender Distribution on Target Variable
-C.	 Correlation between target variable & Chi-Square Test
- 
- 
-Figure 4: Chi Square Test
-
-
-
-
-D.	Outlier detection 
- 
- 
-Figure 5: Outlier Detection between Age vs Target variable
 
 
 
