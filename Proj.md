@@ -1,4 +1,4 @@
-** Early Prevention of Diabetes Using Explainable Machine Learning** 
+## Early Prevention of Diabetes Using Explainable Machine Learning##
 
 ## Abstract
 Diabetes, a prominent lifestyle disease, presents a significant challenge to global public health, with a rising number of individuals affected worldwide. The integration of machine learning models into healthcare offers a promising avenue for improving early detection and intervention strategies. This study investigates the effectiveness of three machine learning models Random Forest (RF), Logistic Regression (LR), and Support Vector Machine (SVM) in predicting diabetes using a dataset of 520 samples with 16 features. The primary focus is on enhancing model interpretability through post-hoc explainability techniques such as SHAP (Shapley Additive Explanations) and LIME (Local Interpretable Model-agnostic Explanations), which provide valuable insights into the factors driving model predictions.
@@ -10,7 +10,7 @@ Keywords: Explainable AI in diabetes, Early Prediction in diabetes, AI in health
 
 
 
-I.	Introduction
+### I.	Introduction ###
 Modern society faces a significant burden from life-threatening diseases that can often be effectively controlled if diagnosed early. According to IDF[1], by 2045, approximately 783 million adults globally, will be living with diabetes. 
 
 Building upon predictive ML models, we employed post hoc explainability techniques to enhance interpretability and decision-making in the early detection of diabetes. This approach not only facilitates early detection of diabetes but also sheds light on the key variables driving these conditions, offering a deeper understanding of its causative factors and potentially guiding more effective intervention strategies.
