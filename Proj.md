@@ -20,9 +20,6 @@ In this study, we have constructed three predictive ML techniques, including RF,
 1.	What are the practical features of a task that predict diabetes?
 2.	Which ML model – has the highest ROC-AUC scores for predicting diabetes?
 3.	Can XAI be utilized to assist endocrinologists in predicting diabetes outcomes more effectively?
-
-The rest of the paper is structured as follows. In the following, (A) a literature review of the XAI and ML techniques applied in the healthcare sector, (II) describes the Experimental design of our projects, (III) the experimental results of our XAI analysis, and lastly, (IV) addresses the conclusion, limitations and future work of this study.
-
 ---
 ---
 
