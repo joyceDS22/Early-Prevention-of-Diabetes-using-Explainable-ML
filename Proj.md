@@ -1,4 +1,4 @@
-## Early Prevention of Diabetes Using Explainable Machine Learning##
+## Early Prevention of Diabetes Using Explainable Machine Learning
 
 ## Abstract
 Diabetes, a prominent lifestyle disease, presents a significant challenge to global public health, with a rising number of individuals affected worldwide. The integration of machine learning models into healthcare offers a promising avenue for improving early detection and intervention strategies. This study investigates the effectiveness of three machine learning models Random Forest (RF), Logistic Regression (LR), and Support Vector Machine (SVM) in predicting diabetes using a dataset of 520 samples with 16 features. The primary focus is on enhancing model interpretability through post-hoc explainability techniques such as SHAP (Shapley Additive Explanations) and LIME (Local Interpretable Model-agnostic Explanations), which provide valuable insights into the factors driving model predictions.
@@ -10,7 +10,7 @@ Keywords: Explainable AI in diabetes, Early Prediction in diabetes, AI in health
 
 ---
 
-### I.	Introduction ###
+### I.	Introduction 
 Modern society faces a significant burden from life-threatening diseases that can often be effectively controlled if diagnosed early. According to IDF[1], by 2045, approximately 783 million adults globally, will be living with diabetes. 
 
 Building upon predictive ML models, we employed post hoc explainability techniques to enhance interpretability and decision-making in the early detection of diabetes. This approach not only facilitates early detection of diabetes but also sheds light on the key variables driving these conditions, offering a deeper understanding of its causative factors and potentially guiding more effective intervention strategies.
@@ -25,7 +25,7 @@ The rest of the paper is structured as follows. In the following, (A) a literatu
 
 ---
  
-A.	Small-Scale Literature Review
+### A.	Small-Scale Literature Review
 This section highlights the practical potential of XAI and ML in improving decision-making processes within the healthcare sector.
 In the modern agile healthcare environment, ML is increasingly utilized to enhance patient care through predictive analytics and personalized treatment approaches. ML models are demonstrating considerable potential in several healthcare fields, including prostate health, oncology, and diabetes management[2, 3].
 Type 2 diabetes, often referred to as the “silent killer,” can develop over many years with minimal warning signs, leaving individuals asymptomatic for extended periods.
@@ -39,7 +39,7 @@ For time-series data, various XAI techniques like temporal saliency maps and att
 Comparing these techniques, SHAP and time-series methods provide both global and local explainability, while counterfactual explanations and Integrated Gradients focus more on local insights. SHAP is model-agnostic, whereas Integrated Gradients and some time-series techniques are model-specific. While counterfactuals and SHAP both offer actionable insights, the former is more intuitive and user-friendly, making it accessible to non-experts. However, both counterfactuals and time-series methods require significant computational resources, especially for complex models. In essence, each method has its strengths and is suited to different contexts, balancing explainability, actionability, and computational feasibility depending on the application.
 
  
-II.	Experimental Design
+#### II.	Experimental Design
 Our study utilizes the UCI dataset “Early prediction of diabetes”. It includes 520 samples with 16 features to predict early-stage diabetes. Our response variable, ‘Class’, is a binary variable that takes a value of 1 (Diabetes) and 0 (No Diabetes). 
 Figure 1 illustrates the proposed pipeline, which includes data pre-processing, feature selection, and model interpretability. The process begins with data pre-processing, followed by EDA and a Chi-square test. Feature importance is assessed using RF, and feature selection is performed with PCA.
 To address the class imbalance, SMOTE is applied before implementing ML models. The dataset is split into an 80:20 ratio for training and testing, using standard performance metrics for classifier evaluation.
